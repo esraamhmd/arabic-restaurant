@@ -46,8 +46,6 @@ https://github.com/user-attachments/assets/2f6b1928-e807-4a5a-b865-19668346eb40
 
 This project is licensed under the MIT License.
 
-<div align="center">
 
-Made with 🧡 for **Mazaq**
 
 </div>
