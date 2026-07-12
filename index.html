@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مذاق | مطبخ شرقي أصيل</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231c130d'/%3E%3Cpath d='M50 12 L59 36 L84 36 L64 51 L72 76 L50 61 L28 76 L36 51 L16 36 L41 36 Z' fill='%23c9972b'/%3E%3C/svg%3E">
+<meta name="description" content="مذاق - مطعم يقدم أشهى الأطباق الشرقية الأصيلة بروح من التراث ولمسة عصرية">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@300;400;500;600;700;800&family=Reem+Kufi:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="preloader" id="preloader">
+  <div class="preloader-star">
+    <svg viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg>
+  </div>
+  <span class="preloader-text">مذاق</span>
+</div>
+<svg width="0" height="0" style="position:absolute" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <g id="star8">
+      <path d="M50 2 L61 32 L92 32 L67 51 L77 82 L50 63 L23 82 L33 51 L8 32 L39 32 Z" />
+    </g>
+
+    <symbol id="icon-skewer" viewBox="0 0 64 64">
+      <path d="M10 54 L54 10" stroke-width="2.2"/>
+      <circle cx="20" cy="44" r="6"/><circle cx="30" cy="34" r="6"/><circle cx="40" cy="24" r="6"/>
+      <path d="M46 8c3 3 3 7 0 10" stroke-width="2"/><path d="M52 4c4 4 4 10 0 14" stroke-width="2"/>
+    </symbol>
+
+    <symbol id="icon-bowl-steam" viewBox="0 0 64 64">
+      <path d="M10 34h44a22 14 0 0 1-44 0Z"/>
+      <path d="M18 34c0-10 4-16 4-16" stroke-width="2"/>
+      <path d="M24 16c-3-4 1-8-2-12" stroke-width="1.6"/>
+      <path d="M32 16c-3-4 1-8-2-12" stroke-width="1.6"/>
+      <path d="M40 16c-3-4 1-8-2-12" stroke-width="1.6"/>
+    </symbol>
+
+    <symbol id="icon-hummus" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="22"/>
+      <path d="M20 28c4-6 20-6 24 0" stroke-width="1.8"/>
+      <path d="M32 20v6M20 34l6 4M44 34l-6 4" stroke-width="1.6"/>
+    </symbol>
+
+    <symbol id="icon-bread" viewBox="0 0 64 64">
+      <path d="M8 40c0-16 12-26 24-26s24 10 24 26c0 4-48 4-48 0Z"/>
+      <path d="M18 26c4 4 4 10 0 14M32 20c4 5 4 11 0 16M46 26c-4 4-4 10 0 14" stroke-width="1.6"/>
+    </symbol>
+
+    <symbol id="icon-chicken" viewBox="0 0 64 64">
+      <path d="M40 12c8 0 14 6 14 13 0 9-8 13-12 20-3 5-3 9-8 9-6 0-9-5-6-10 2-4 5-5 5-11 0-9 0-15 7-21Z"/>
+      <circle cx="46" cy="20" r="3" fill="currentColor" stroke="none"/>
+    </symbol>
+
+    <symbol id="icon-platter" viewBox="0 0 64 64">
+      <ellipse cx="32" cy="36" rx="26" ry="14"/>
+      <circle cx="20" cy="32" r="6"/><circle cx="34" cy="30" r="7"/><circle cx="46" cy="34" r="5"/>
+    </symbol>
+
+    <symbol id="icon-kunafa" viewBox="0 0 64 64">
+      <path d="M8 48 L32 12 L56 48Z"/>
+      <path d="M16 42h32M20 34h24M25 26h14" stroke-width="1.6"/>
+      <path d="M32 12v6" stroke-width="1.6"/>
+    </symbol>
+
+    <symbol id="icon-sweets" viewBox="0 0 64 64">
+      <circle cx="20" cy="36" r="10"/><circle cx="44" cy="36" r="10"/>
+      <path d="M20 26c2-4 6-4 8-8M44 26c2-4 6-4 8-8" stroke-width="1.6"/>
+    </symbol>
+
+    <symbol id="icon-chef" viewBox="0 0 64 64">
+      <path d="M20 58V40c-6-2-10-8-10-14a14 14 0 0 1 14-14c1-6 6-10 12-10s11 4 12 10a14 14 0 0 1 6 26v20" stroke-width="2"/>
+      <path d="M16 58h32" stroke-width="2"/>
+    </symbol>
+
+    <symbol id="icon-mezze" viewBox="0 0 64 64">
+      <ellipse cx="32" cy="46" rx="26" ry="8"/>
+      <circle cx="18" cy="30" r="9"/><circle cx="36" cy="24" r="10"/><circle cx="50" cy="32" r="7"/>
+    </symbol>
+
+    <symbol id="icon-spice" viewBox="0 0 64 64">
+      <path d="M32 6c10 10 18 20 18 30a18 18 0 0 1-36 0c0-10 8-20 18-30Z"/>
+      <path d="M32 24v18" stroke-width="1.6"/>
+    </symbol>
+  </defs>
+</svg>
+
+
+<header class="site-header" id="siteHeader">
+  <input type="checkbox" id="navCheckbox" class="nav-checkbox">
+  <div class="container header-inner">
+    <a href="#hero" class="logo">
+      <svg class="logo-star" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg>
+      <span>مذاق</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#hero" class="active">الرئيسية</a>
+      <a href="#about">من نحن</a>
+      <a href="#specialties">تخصصاتنا</a>
+      <a href="#menu">القائمة</a>
+      <a href="#team">فريق الطهاة</a>
+      <a href="#reviews">آراء عملائنا</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <a href="#contact" class="btn btn-outline nav-cta">احجز طاولتك</a>
+    <label for="navCheckbox" class="nav-toggle" id="navToggle" aria-label="فتح القائمة">
+      <span></span><span></span><span></span>
+    </label>
+  </div>
+</header>
+
+
+<section class="hero" id="hero">
+  
+  <input type="radio" name="heroSlide" id="heroSlide1" class="slide-radio" checked>
+  <input type="radio" name="heroSlide" id="heroSlide2" class="slide-radio">
+  <input type="radio" name="heroSlide" id="heroSlide3" class="slide-radio">
+
+  <div class="hero-slides" id="heroSlides">
+    <div class="hero-slide">
+      <div class="art-tile tile-pomegranate"><img class="art-photo" loading="lazy" decoding="async" src="images/main.avif" alt="مشاوي مذاق على الفحم">
+        <svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg>
+        <svg class="art-icon"><use href="#icon-skewer" xlink:href="#icon-skewer"/></svg>
+      </div>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-slide">
+      <div class="art-tile tile-saffron"><img class="art-photo" loading="lazy" decoding="async" src="images/main-2.avif" alt="أرز بالزعفران واللحم">
+        <svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg>
+        <svg class="art-icon"><use href="#icon-bowl-steam" xlink:href="#icon-bowl-steam"/></svg>
+      </div>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-slide">
+      <div class="art-tile tile-olive"><img class="art-photo" loading="lazy" decoding="async" src="images/main-4.avif" alt="مائدة شرقية غنية بالأطباق">
+        <svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg>
+        <svg class="art-icon"><use href="#icon-mezze" xlink:href="#icon-mezze"/></svg>
+      </div>
+      <div class="hero-overlay"></div>
+    </div>
+  </div>
+
+  <div class="hero-frame" aria-hidden="true">
+    <svg class="corner corner-tr" viewBox="0 0 120 120"><path d="M2 2 h40 M2 2 v40 M2 2 L 30 30" /></svg>
+    <svg class="corner corner-tl" viewBox="0 0 120 120"><path d="M118 2 h-40 M118 2 v40 M118 2 L 90 30" /></svg>
+    <svg class="corner corner-br" viewBox="0 0 120 120"><path d="M2 118 h40 M2 118 v-40 M2 118 L 30 90" /></svg>
+    <svg class="corner corner-bl" viewBox="0 0 120 120"><path d="M118 118 h-40 M118 118 v-40 M118 118 L 90 90" /></svg>
+  </div>
+
+  <div class="container hero-content">
+    <p class="eyebrow" data-reveal>مطعم مذاق &mdash; تأسس على الأصالة</p>
+    <h1 data-reveal>حكاية نكهة <span>تُروى</span> على المائدة</h1>
+    <p class="hero-sub" data-reveal>كل طبق عندنا وصفة موروثة، وكل توابل حكاية، نطبخ بالنار الهادئة والصبر الطويل كما تعلّمنا أجدادنا</p>
+    <div class="hero-actions" data-reveal>
+      <a href="#menu" class="btn btn-primary">تصفح القائمة</a>
+      <a href="#contact" class="btn btn-ghost">احجز طاولتك</a>
+    </div>
+  </div>
+
+  <div class="hero-dots" id="heroDots">
+    <label for="heroSlide1" aria-label="الشريحة 1"></label>
+    <label for="heroSlide2" aria-label="الشريحة 2"></label>
+    <label for="heroSlide3" aria-label="الشريحة 3"></label>
+  </div>
+
+  <div class="scroll-cue">
+    <span></span>
+    <p>مرّر للأسفل</p>
+  </div>
+</section>
+
+<section class="stats-strip">
+  <div class="container stats-grid">
+    <div class="stat" data-count="27">
+      <span class="stat-num">٢٧</span>
+      <p>عامًا من الخبرة</p>
+    </div>
+    <div class="stat" data-count="48">
+      <span class="stat-num">٤٨</span>
+      <p>طبقًا أصيلًا</p>
+    </div>
+    <div class="stat" data-count="15">
+      <span class="stat-num">١٥</span>
+      <p>توابل مختارة بعناية</p>
+    </div>
+    <div class="stat" data-count="9600">
+      <span class="stat-num">٩٬٦٠٠</span>
+      <p>ضيف سعيد سنويًا</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-media" data-reveal>
+      <div class="about-art art-tile tile-dark"><img class="art-photo" loading="lazy" decoding="async" src="images/من نحن.avif" alt="مائدة شرقية غنية بالأطباق التقليدية">
+        <svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg>
+        <svg class="art-icon"><use href="#icon-mezze" xlink:href="#icon-mezze"/></svg>
+      </div>
+      <div class="about-media-frame"></div>
+      <div class="about-badge">
+        <svg viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg>
+        <span>منذ<br>١٩٩٨</span>
+      </div>
+    </div>
+    <div class="about-text">
+      <p class="eyebrow" data-reveal>من نحن</p>
+      <h2 data-reveal>مطبخ يحفظ <span>الوصفة</span> ولا يستعجل النار</h2>
+      <p class="lead" data-reveal>في "مذاق"، الطبخ عندنا عادة ورثناها لا مهنة تعلمناها. نجمع بين توابل الأسواق القديمة وأسلوب تقديم يليق بمائدة اليوم، فتصل النكهة كما هي: صادقة وغنية ودافئة.</p>
+      <ul class="about-points" data-reveal>
+        <li><span class="point-icon">١</span> مكونات طازجة تُختار كل صباح من أسواقنا المحلية</li>
+        <li><span class="point-icon">٢</span> شوّاية حطب تقليدية تمنح اللحم نكهته الأصيلة</li>
+        <li><span class="point-icon">٣</span> توابل تُطحن يدويًا داخل المطبخ يوميًا</li>
+      </ul>
+      <a href="#menu" class="btn btn-primary" data-reveal>اكتشف القائمة</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="specialties" id="specialties">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow" data-reveal>تخصصاتنا</p>
+      <h2 data-reveal>ثلاث ركائز تصنع <span>مذاقنا</span></h2>
+    </div>
+    <div class="specialty-grid">
+      <div class="specialty-card" data-reveal>
+        <div class="specialty-icon">
+          <svg viewBox="0 0 64 64"><path d="M32 4c-6 10-14 16-14 28a14 14 0 0 0 28 0c0-12-8-18-14-28Z"/><path d="M32 24c-3 5-6 8-6 14a6 6 0 0 0 12 0c0-6-3-9-6-14Z" class="flame-inner"/></svg>
+        </div>
+        <h3>نار الحطب</h3>
+        <p>نشوي على الحطب الطبيعي لنمنح كل قطعة طبقة دخانية أصيلة لا يصنعها الغاز.</p>
+      </div>
+      <div class="specialty-card" data-reveal>
+        <div class="specialty-icon">
+          <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="20"/><path d="M32 18v14l10 6" class="spice-hand"/></svg>
+        </div>
+        <h3>توابل أصيلة</h3>
+        <p>خلطات توابل نطحنها بأنفسنا بنسب توارثتها العائلة جيلًا بعد جيل.</p>
+      </div>
+      <div class="specialty-card" data-reveal>
+        <div class="specialty-icon">
+          <svg viewBox="0 0 64 64"><path d="M14 46c6 6 30 6 36 0" /><path d="M18 46V22a14 14 0 0 1 28 0v24"/><path d="M12 46h40"/></svg>
+        </div>
+        <h3>كرم الضيافة</h3>
+        <p>المائدة عندنا لا تكتمل بالطعام وحده، بل بالترحيب الذي يسبقه ويرافقه.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="menu" id="menu">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow" data-reveal>قائمة الطعام</p>
+      <h2 data-reveal>مختارات من <span>مطبخنا</span></h2>
+    </div>
+
+    <input type="radio" name="menuFilter" id="filterAll" class="slide-radio" checked>
+    <input type="radio" name="menuFilter" id="filterStarters" class="slide-radio">
+    <input type="radio" name="menuFilter" id="filterMains" class="slide-radio">
+    <input type="radio" name="menuFilter" id="filterSweets" class="slide-radio">
+
+    <div class="menu-tabs" data-reveal>
+      <label for="filterAll" class="menu-tab" data-filter="all">الكل</label>
+      <label for="filterStarters" class="menu-tab" data-filter="starters">مقبلات</label>
+      <label for="filterMains" class="menu-tab" data-filter="mains">أطباق رئيسية</label>
+      <label for="filterSweets" class="menu-tab" data-filter="sweets">حلويات</label>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+
+      <article class="dish-card cat-starters" data-cat="starters" data-reveal>
+        <div class="dish-img"><div class="art-tile tile-olive"><img class="art-photo" loading="lazy" decoding="async" src="images/حمّص بيتنا.avif" alt="حمّص بزيت الزيتون وخبز البيتا"><svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg><svg class="art-icon"><use href="#icon-hummus" xlink:href="#icon-hummus"/></svg></div></div>
+        <div class="dish-body">
+          <div class="dish-top"><h3>حمّص بيتنا</h3><span class="price">٤٥ ج.م</span></div>
+          <p>حمص كريمي بزيت الزيتون البكر وصنوبر محمص وخبز بيتا ساخن</p>
+        </div>
+      </article>
+
+      <article class="dish-card cat-starters" data-cat="starters" data-reveal>
+        <div class="dish-img"><div class="art-tile tile-olive"><img class="art-photo" loading="lazy" decoding="async" src="images/مقبلات المذاق.jpg" alt="طبق مقبلات متنوعة بالصلصات الشرقية"><svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg><svg class="art-icon"><use href="#icon-mezze" xlink:href="#icon-mezze"/></svg></div></div>
+        <div class="dish-body">
+          <div class="dish-top"><h3>مقبلات المذاق</h3><span class="price">٦٠ ج.م</span></div>
+          <p>تشكيلة من الصلصات والمخللات البيتية تُقدَّم مع خبز طازج من الفرن</p>
+        </div>
+      </article>
+
+      <article class="dish-card cat-starters" data-cat="starters" data-reveal>
+        <div class="dish-img"><div class="art-tile tile-olive"><img class="art-photo" loading="lazy" decoding="async" src="images/خبز الطابون.jpg" alt="خبز شرقي طازج من الفرن"><svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg><svg class="art-icon"><use href="#icon-bread" xlink:href="#icon-bread"/></svg></div></div>
+        <div class="dish-body">
+          <div class="dish-top"><h3>خبز الطابون</h3><span class="price">٢٠ ج.م</span></div>
+          <p>يُخبز على الطريقة التقليدية داخل فرن طيني، دافئ ومقرمش من الأطراف</p>
+        </div>
+      </article>
+
+      <article class="dish-card cat-mains" data-cat="mains" data-reveal>
+        <div class="dish-img"><div class="art-tile tile-pomegranate"><img class="art-photo" loading="lazy" decoding="async" src="images/مشاوي مذاق.avif" alt="مشاوي مشكلة على الفحم"><svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg><svg class="art-icon"><use href="#icon-skewer" xlink:href="#icon-skewer"/></svg></div></div>
+        <div class="dish-body">
+          <div class="dish-top"><h3>مشاوي مذاق المشكّلة</h3><span class="price">١٨٠ ج.م</span></div>
+          <p>تشكيلة من اللحوم المشوية على الفحم مع أرز بالشعرية وسلطة موسمية</p>
+        </div>
+      </article>
+
+      <article class="dish-card cat-mains" data-cat="mains" data-reveal>
+        <div class="dish-img"><div class="art-tile tile-pomegranate"><img class="art-photo" loading="lazy" decoding="async" src="images/مندي البيت.avif" alt="أرز مندي بالدجاج والزعفران"><svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg><svg class="art-icon"><use href="#icon-bowl-steam" xlink:href="#icon-bowl-steam"/></svg></div></div>
+        <div class="dish-body">
+          <div class="dish-top"><h3>مندي البيت</h3><span class="price">١٥٠ ج.م</span></div>
+          <p>لحم طري يُطهى ببطء فوق الأرز المُعطّر بالبهارات والزعفران</p>
+        </div>
+      </article>
+
+      <article class="dish-card cat-mains" data-cat="mains" data-reveal>
+        <div class="dish-img"><div class="art-tile tile-pomegranate"><img class="art-photo" loading="lazy" decoding="async" src="images/دجاج مذاق بالفرن.avif" alt="دجاجة مشوية كاملة على طبق"><svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg><svg class="art-icon"><use href="#icon-chicken" xlink:href="#icon-chicken"/></svg></div></div>
+        <div class="dish-body">
+          <div class="dish-top"><h3>دجاج مذاق بالفرن</h3><span class="price">١٢٠ ج.م</span></div>
+          <p>دجاجة كاملة متبّلة تُشوى ببطء حتى تصل لأشهى درجات النضج</p>
+        </div>
+      </article>
+
+      <article class="dish-card cat-mains" data-cat="mains" data-reveal>
+        <div class="dish-img"><div class="art-tile tile-pomegranate"><img class="art-photo" loading="lazy" decoding="async" src="images/مائدة الكرم.avif" alt="مائدة شرقية متنوعة بالأطباق الرئيسية"><svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg><svg class="art-icon"><use href="#icon-platter" xlink:href="#icon-platter"/></svg></div></div>
+        <div class="dish-body">
+          <div class="dish-top"><h3>مائدة الكرم</h3><span class="price">٢٤٠ ج.م</span></div>
+          <p>تشكيلة مشتركة من ألذ أطباقنا الرئيسية، مثالية للمشاركة العائلية</p>
+        </div>
+      </article>
+
+      <article class="dish-card cat-sweets" data-cat="sweets" data-reveal>
+        <div class="dish-img"><div class="art-tile tile-saffron"><img class="art-photo" loading="lazy" decoding="async" src="images/sweet-2.jpg" alt="كنافة بالفستق على طبق"><svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg><svg class="art-icon"><use href="#icon-kunafa" xlink:href="#icon-kunafa"/></svg></div></div>
+        <div class="dish-body">
+          <div class="dish-top"><h3>كنافة الجدّة</h3><span class="price">٥٥ ج.م</span></div>
+          <p>عجينة مقرمشة وقشطة طازجة وشربات عسل، تُقدَّم ساخنة من الفرن</p>
+        </div>
+      </article>
+
+      <article class="dish-card cat-sweets" data-cat="sweets" data-reveal>
+        <div class="dish-img"><div class="art-tile tile-saffron"><img class="art-photo" loading="lazy" decoding="async" src="images/مذاق الحلو.avif" alt="صينية حلويات شرقية متنوعة"><svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg><svg class="art-icon"><use href="#icon-sweets" xlink:href="#icon-sweets"/></svg></div></div>
+        <div class="dish-body">
+          <div class="dish-top"><h3>مشكّل مذاق الحلو</h3><span class="price">٦٥ ج.م</span></div>
+          <p>تشكيلة يومية من الحلويات الشرقية بالمكسرات وماء الورد</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="ingredients" id="ingredients">
+  <div class="ingredients-bg art-tile tile-dark"><img class="art-photo" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1608196699808-7b9132c8bc7c?q=80&w=1200&auto=format&fit=crop" alt="توابل وبهارات شرقية">
+    <svg class="art-watermark art-watermark-big" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg>
+    <svg class="art-icon art-icon-ghost"><use href="#icon-spice" xlink:href="#icon-spice"/></svg>
+  </div>
+  <div class="ingredients-overlay"></div>
+  <div class="container ingredients-content">
+    <p class="eyebrow eyebrow-light" data-reveal>مكوّناتنا</p>
+    <h2 data-reveal>ثلاث توابل تحمل <span>هوية</span> المائدة</h2>
+    <div class="ingredient-row">
+      <div class="ingredient-item" data-reveal>
+        <span class="ingredient-tag tag-saffron">زعفران</span>
+        <p>خيوط ذهبية نُضيفها بحذر لتمنح الأرز عبقًا ولونًا لا يُقلَّد</p>
+      </div>
+      <div class="ingredient-item" data-reveal>
+        <span class="ingredient-tag tag-pomegranate">سماق</span>
+        <p>حموضته الخفيفة توقظ الطبق وتوازن دسم اللحم المشوي</p>
+      </div>
+      <div class="ingredient-item" data-reveal>
+        <span class="ingredient-tag tag-olive">زعتر</span>
+        <p>مزيج بيتي من الزعتر البري والسمسم المحمّص وزيت الزيتون</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="team" id="team">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow" data-reveal>فريق الطهاة</p>
+      <h2 data-reveal>الأيادي التي <span>تصنع</span> النكهة</h2>
+    </div>
+    <div class="team-grid">
+      <article class="chef-card" data-reveal>
+        <div class="chef-img">
+          <div class="art-tile tile-dark"><img class="art-photo" loading="lazy" decoding="async" src="images/chief-3.jpg" alt="الشيف كريم عبد الله"><svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg><svg class="art-icon"><use href="#icon-chef" xlink:href="#icon-chef"/></svg></div>
+        </div>
+        <div class="chef-info">
+          <h3>كريم عبد الله</h3>
+          <span>رئيس الطهاة &mdash; المشاوي</span>
+        </div>
+      </article>
+      <article class="chef-card" data-reveal>
+        <div class="chef-img">
+          <div class="art-tile tile-dark"><img class="art-photo" loading="lazy" decoding="async" src="images/chief-2.avif" alt="الشيف يوسف حمدي"><svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg><svg class="art-icon"><use href="#icon-chef" xlink:href="#icon-chef"/></svg></div>
+        </div>
+        <div class="chef-info">
+          <h3>يوسف حمدي</h3>
+          <span>مسؤول التوابل والبهارات</span>
+        </div>
+      </article>
+      <article class="chef-card" data-reveal>
+        <div class="chef-img">
+          <div class="art-tile tile-dark"><img class="art-photo" loading="lazy" decoding="async" src="images/chief-1.avif" alt="الشيف سامية طارق"><svg class="art-watermark" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg><svg class="art-icon"><use href="#icon-chef" xlink:href="#icon-chef"/></svg></div>
+        </div>
+        <div class="chef-info">
+          <h3>سامية طارق</h3>
+          <span>شيف الحلويات الشرقية</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow" data-reveal>آراء عملائنا</p>
+      <h2 data-reveal>كلام <span>ضيوفنا</span> يسبقنا</h2>
+    </div>
+
+    <input type="radio" name="tSlide" id="tSlide1" class="slide-radio" checked>
+    <input type="radio" name="tSlide" id="tSlide2" class="slide-radio">
+    <input type="radio" name="tSlide" id="tSlide3" class="slide-radio">
+
+    <div class="testimonial-wrap" data-reveal>
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-slide">
+          <p class="stars">★★★★★</p>
+          <p class="t-text">النكهة صادقة فعلًا، حسّيت إني بتغدى في بيت جدتي. المندي كان استثنائي والخدمة راقية من غير تكلّف.</p>
+        </div>
+        <div class="testimonial-slide">
+          <p class="stars">★★★★★</p>
+          <p class="t-text">المشاوي على الفحم فرق كبير، والتوابل حسيت إنها متخلطة بحب مش بس بمقادير. أكيد هرجع تاني.</p>
+        </div>
+        <div class="testimonial-slide">
+          <p class="stars">★★★★★</p>
+          <p class="t-text">حجزنا لمناسبة عائلية والمكان استقبلنا بحفاوة، والكنافة في الآخر كانت لمسة حلوة قفلت بيها السهرة.</p>
+        </div>
+      </div>
+    </div>
+    <div class="t-dots" id="tDots">
+      <label for="tSlide1"></label>
+      <label for="tSlide2"></label>
+      <label for="tSlide3"></label>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info" data-reveal>
+      <p class="eyebrow" data-reveal>تواصل معنا</p>
+      <h2 data-reveal>نحن في <span>انتظارك</span></h2>
+      <p class="lead">احجز طاولتك الآن أو راسلنا لأي استفسار، فريقنا جاهز للترحيب بك</p>
+      <ul class="contact-list">
+        <li><strong>العنوان</strong><span>شارع النيل، وسط البلد، القاهرة</span></li>
+        <li><strong>الهاتف</strong><span dir="ltr">+20 100 123 4567</span></li>
+        <li><strong>مواعيد العمل</strong><span>يوميًا من ١ ظهرًا حتى ١ فجرًا</span></li>
+      </ul>
+      <div class="social-row">
+        <a href="#" aria-label="فيسبوك">f</a>
+        <a href="#" aria-label="إنستغرام">ig</a>
+        <a href="#" aria-label="واتساب">wa</a>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm" data-reveal>
+      <div class="form-row">
+        <input type="text" placeholder="الاسم الكامل" required>
+        <input type="tel" placeholder="رقم الهاتف" required>
+      </div>
+      <input type="text" placeholder="عدد الأشخاص / التاريخ المطلوب">
+      <textarea rows="4" placeholder="رسالتك أو ملاحظاتك"></textarea>
+      <button type="submit" class="btn btn-primary">إرسال الطلب</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#hero" class="logo footer-logo">
+      <svg class="logo-star" viewBox="0 0 100 100"><use href="#star8" xlink:href="#star8"/></svg>
+      <span>مذاق</span>
+    </a>
+    <nav class="footer-nav">
+      <a href="#about">من نحن</a>
+      <a href="#menu">القائمة</a>
+      <a href="#team">الفريق</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <p class="footer-copy">© 2026 مذاق. جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<a href="#hero" class="back-top" id="backTop" aria-label="العودة للأعلى">
+  <svg viewBox="0 0 24 24"><path d="M12 5l-7 7M12 5l7 7M12 5v14"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
