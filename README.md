@@ -1,5 +1,5 @@
 
-https://github.com/user-attachments/assets/1f05800f-e343-419e-9299-420774a681fe
+
 <div align="center">
 
 # 🍽️ Mazaq — Arabic Restaurant
