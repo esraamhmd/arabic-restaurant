@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 <div align="center">
 
 # 🍽️ مذاق — Restaurant Management Dashboard
@@ -13,6 +22,7 @@
 [![WhatsApp API](https://img.shields.io/badge/WhatsApp_API-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/)
 [![RTL](https://img.shields.io/badge/RTL_Arabic-009900?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Glossary/rtl)
 
+https://github.com/user-attachments/assets/a3bd4736-f2c3-4d70-857a-951da6d5f987
 **A production-ready Arabic restaurant website with a full admin dashboard for menu management.**
 Built with vanilla HTML, CSS, and JavaScript — featuring RTL Arabic design, cinematic hero sections, WhatsApp ordering, and a password-protected admin panel.
 
@@ -194,69 +204,9 @@ Also update the `href` links in `index.html` for the FAB and contact section but
 
 In `admin.html`, find and update:
 
-```js
-const ADMIN_PASSWORD = 'your-secure-password';
-```
 
-> ⚠️ This is a client-side password for a simple CMS. Do not use it to protect sensitive business data.
 
-### 5. Deploy
 
-The project is pure static HTML — deploy anywhere:
-
-```bash
-# Vercel
-vercel deploy
-
-# Netlify drag-and-drop
-# Simply drag the folder to netlify.com/drop
-
-# GitHub Pages
-# Push to a repo and enable Pages in Settings
-```
-
----
-
-## 🔐 Admin Access
-
-| Field | Value |
-|---|---|
-| URL | `/admin.html` or `/admin` |
-| Password | Set in `admin.html` → `ADMIN_PASSWORD` |
-
-> The admin link is hidden in the footer (opacity ~0) and only accessible by direct URL.
-
----
-
-## 🎨 Color Palette
-
-| Name | Variable | Hex |
-|---|---|---|
-| Saffron | `--saffron` | `#c9972b` |
-| Saffron Light | `--saffron-light` | `#e0b654` |
-| Pomegranate | `--pomegranate` | `#9c2b2e` |
-| Pomegranate Light | `--pomegranate-light` | `#c1493f` |
-| Olive | `--olive` | `#55622e` |
-| Olive Light | `--olive-light` | `#79894a` |
-| Background Dark | `--bg-dark` | `#1c130d` |
-| Background Cream | `--bg-cream` | `#f4e9d6` |
-| WhatsApp | `--whatsapp` | `#25D366` |
-
----
-
-## 🌍 RTL & Arabic Typography
-
-The entire project is built for Arabic-first with right-to-left layout:
-
-| Font | Role | Style |
-|---|---|---|
-| Aref Ruqaa | Headings & brand | Classical Arabic calligraphy |
-| Reem Kufi | UI labels & buttons | Modern geometric Kufi |
-| Cairo | Body text & descriptions | Clean contemporary Arabic |
-
-All layout uses `dir="rtl"` at the `<html>` level. CSS uses `border-inline-start` instead of `border-left` for bidirectional-safe accents.
-
----
 
 ## 📄 License
 
