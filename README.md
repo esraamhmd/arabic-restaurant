@@ -1,30 +1,28 @@
 
-
-
-
-
-
-
-
-
+https://github.com/user-attachments/assets/1f05800f-e343-419e-9299-420774a681fe
 <div align="center">
 
-# 🍽️ مذاق — Restaurant Management Dashboard
+# 🍽️ Mazaq — Arabic Restaurant
 
-### Full-Stack Arabic Restaurant Website & Admin Dashboard
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![EmailJS](https://img.shields.io/badge/EmailJS-E34F26?style=for-the-badge)](https://www.emailjs.com/)
+[![WhatsApp API](https://img.shields.io/badge/WhatsApp_API-25D366?style=for-the-badge\&logo=whatsapp\&logoColor=white)](https://wa.me/)
+[![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge\&logo=google\&logoColor=white)](https://fonts.google.com/)
 [![LocalStorage](https://img.shields.io/badge/LocalStorage-4A90D9?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
-[![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://fonts.google.com/)
-[![WhatsApp API](https://img.shields.io/badge/WhatsApp_API-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/)
 [![RTL](https://img.shields.io/badge/RTL_Arabic-009900?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Glossary/rtl)
 
-https://github.com/user-attachments/assets/a3bd4736-f2c3-4d70-857a-951da6d5f987
-**A production-ready Arabic restaurant website with a full admin dashboard for menu management.**
-Built with vanilla HTML, CSS, and JavaScript — featuring RTL Arabic design, cinematic hero sections, WhatsApp ordering, and a password-protected admin panel.
+
+
+**An  Arabic restaurant website with a password-protected admin dashboard for live menu management.**
+Built entirely with vanilla HTML, CSS, and JavaScript.
+
+
+https://github.com/user-attachments/assets/c4bb827b-7280-4c2b-b944-5e98e8b57ebc
+
 
 
 </div>
@@ -33,186 +31,148 @@ Built with vanilla HTML, CSS, and JavaScript — featuring RTL Arabic design, ci
 
 ## 📖 Introduction
 
-**مذاق (Mazaq)** is a full-featured Arabic restaurant web presence with a built-in menu management system. It goes far beyond a typical restaurant template — every dish on the public site is editable through a password-protected admin dashboard, orders flow directly through WhatsApp, and the entire experience is crafted for Arabic-speaking audiences with authentic RTL design.
-
-| Typical Restaurant Template | مذاق |
-|---|---|
-| Static menu you edit in code | ✅ Live menu managed via admin dashboard with full CRUD |
-| English-only layout | ✅ Full Arabic RTL design with authentic typography |
-| No admin access control | ✅ Password-protected admin dashboard |
-| Hardcoded contact form | ✅ EmailJS integration with auto-reply to customers |
-| No ordering flow | ✅ WhatsApp ordering button on every dish card |
-| Generic fonts | ✅ Aref Ruqaa, Reem Kufi & Cairo — premium Arabic type stack |
-| Static hero images | ✅ Auto-advancing hero slideshow with 3 slides |
-| No animations | ✅ Scroll-reveal, counter animations, smooth transitions |
-
----
+**Mazaq (مذاق)** is a beautifully designed Arabic restaurant website targeting Egyptian audiences. The public-facing site presents the restaurant's story, menu, chefs, and contact details in a cinematic Arabic RTL layout. A hidden admin dashboard (`admin.html`) lets the restaurant owner manage the menu — adding, editing, and deleting dishes — with all changes instantly reflected on the public site via `localStorage`.
 
 ## ✨ Features
 
-### 🌐 Public Website
-- Cinematic hero slideshow with auto-advance and dot navigation
-- Animated statistics strip with live Arabic numeral counters
-- About section with layered art tile imagery and golden frame accent
-- Three specialties section with animated icon cards
-- Full filterable menu grid (All / Starters / Mains / Sweets)
-- Ingredient spotlight section with full-bleed background
-- Chef team section with hover-reveal info cards
-- Testimonial carousel with auto-advance
-- Contact form powered by EmailJS (owner email + customer auto-reply)
-- WhatsApp floating action button with pulse animation
-- Smooth scroll with active nav link highlighting
-- Back-to-top button
-- IntersectionObserver scroll-reveal animations throughout
+### 🌐 Public Site (`index.html` + `style.css` + `script.js`)
 
-### 🔐 Admin Dashboard (`/admin`)
-- Password-protected login screen
-- Live dish statistics (total, starters, mains, sweets)
-- Add new dishes with name, price, category, description, and image
-- Edit existing dishes via modal
-- Delete dishes with confirmation prompt
-- Search and category filter across all dishes
-- Changes persist via localStorage and sync instantly to the public site
-- Toast notifications for all actions (add, edit, delete, errors)
-- Logout button
+**Hero Section**
 
-### 📱 WhatsApp Integration
-- Floating WhatsApp FAB on all pages with tooltip
-- Per-dish "Order via WhatsApp" button with pre-filled message
-- WhatsApp contact button in the contact section
+* 3-slide CSS-only carousel using `<input type="radio">` — zero JS needed for the slide logic
+* Auto-advance via `setInterval` every 5.5 seconds with reset on manual dot click
+* SVG corner frame overlay, scroll-cue animation, and two CTA buttons
 
-### 📧 Email Integration (EmailJS)
-- Contact form sends email to restaurant owner
-- Optional auto-reply email to the customer
-- Graceful error handling with Arabic feedback messages
+**Stats Strip**
+
+* 4 animated counters (27 years, 48 dishes, 15 spices, 9,600 guests)
+* Count-up animation using `requestAnimationFrame` and easing curve
+* Numbers rendered in Arabic-Eastern (`ar-EG` locale)
+
+**About Section**
+
+* Layered art tile with pomegranate/saffron/olive gradient backgrounds
+* SVG watermark star + hand-drawn food icon overlays on every image
+* Offset golden border frame and circular "Since 1998" badge
+
+**Specialties Section**
+
+* 3 cards: Woodfire cooking, Handground spices, Hospitality
+* Inline SVG icons with custom stroke animations on hover
+
+**Menu Section**
+
+* Dish cards rendered entirely from JavaScript reading `localStorage`
+* Category filter tabs: All / Starters / Mains / Sweets
+* Each card: art tile thumbnail, dish name, price in `ar-EG` locale, description, WhatsApp order button
+* Defaults to 9 hardcoded dishes if localStorage is empty
+* Syncs live with admin via the `storage` browser event — open both tabs and edits appear instantly
+
+**Ingredients Section**
+
+* Full-bleed background art tile with large SVG watermark
+* 3 highlighted spices: Saffron, Sumac, Za'atar with colored badge tags
+
+**Chef Team Section**
+
+* 3 chef cards with art tile photos
+* Info (name + role) revealed on hover via CSS gradient overlay
+
+**Reviews / Testimonials**
+
+* 3-slide CSS radio carousel, auto-advances every 6 seconds
+* Star ratings and display-font quotes
+
+**Contact Section**
+
+* EmailJS form with two sends: one to the restaurant owner, one auto-reply to the customer
+* Inline Arabic validation messages
+* WhatsApp direct contact button with pre-filled Arabic message
+* Address, phone, and working hours listed
+* Social links row (Facebook, Instagram, WhatsApp)
+
+**Navigation & UX**
+
+* Sticky header with blur backdrop and scroll-shadow transition
+* CSS-only hamburger menu using a hidden `<input type="checkbox">`
+* Active nav link tracking via scroll position
+* Preloader animation (star spin + brand name fade) with `IntersectionObserver` auto-dismiss
+* Back-to-top button, visible after 500px scroll
+* WhatsApp FAB with CSS pulse ring animation and hover tooltip
+
+---
+
+### 🔐 Admin Dashboard (`admin.html`)
+
+A fully self-contained single HTML file — own styles, own script, no dependencies on `style.css` or `script.js`.
+
+**Login Screen**
+
+* Full-screen password gate before anything is shown
+* Wrong password shakes the input border red and clears the field
+* Enter key supported
+
+**Stats Panel (sidebar)**
+
+* 4 live stat cards: Total dishes / Starters / Mains / Sweets
+* Update instantly on every add, edit, or delete
+
+**Add Dish Form (sidebar)**
+
+* Fields: dish name, price, category (dropdown), description, image URL
+* Validates name and price before saving
+* Saves to `localStorage` under key `mazaMenu`
+* Dispatches a `StorageEvent` so the public site tab updates without a reload
+
+**Dish Grid (main panel)**
+
+* Renders all dishes as cards with thumbnail image (falls back to emoji placeholder if image fails)
+* Category color accent strip per card (olive = starters, pomegranate = mains, saffron = sweets)
+* Category badge overlay on thumbnail
+* Search input filters by dish name or description in real time
+* Filter tabs: All / Starters / Mains / Sweets
+
+**Edit Modal**
+
+* Opens pre-filled with the selected dish's data
+* Same validation as add form
+* Saves changes and re-renders the grid
+* Closes on backdrop click or Escape key
+
+**Delete**
+
+* `window.confirm` dialog before deletion
+* Removes from array and re-saves to `localStorage`
+
+**Toast Notifications**
+
+* Bottom-center toast for: added, saved, deleted, and error states
+* Auto-dismisses after 2.8 seconds
+
+**Logout**
+
+* Hides the dashboard, shows the login screen, clears the password field
 
 ---
 
 ## 🚀 Tech Stack
 
-### Frontend
-- **HTML5** — Semantic markup with RTL `dir="rtl"` and `lang="ar"`
-- **CSS3** — Custom properties, CSS Grid, Flexbox, keyframe animations
-- **Vanilla JavaScript** — No framework, zero dependencies
-- **Arabic Typography** — Aref Ruqaa (display), Reem Kufi (UI), Cairo (body)
-
-### Integrations
-- **EmailJS** — Contact form email delivery and auto-reply
-- **WhatsApp API** — Direct ordering and contact via `wa.me` links
-- **Google Fonts** — Arabic font stack loaded via CDN
-- **LocalStorage** — Menu data persistence across sessions
-
-### Design System
-- Custom CSS variables for saffron, pomegranate, and olive color palette
-- Art tile system with layered SVG watermarks and food icons
-- Consistent `cubic-bezier(.22,.68,0,1)` easing throughout
-- Fully responsive — mobile-first breakpoints at 360px, 480px, 640px, 768px, 980px, 1024px
+| Layer       | Technology                                         |
+| ----------- | -------------------------------------------------- |
+| Markup      | HTML5, `dir="rtl"`, `lang="ar"`                    |
+| Styling     | CSS3 — custom properties, Grid, Flexbox, keyframes |
+| Scripting   | Vanilla JavaScript (ES5-compatible) — no framework |
+| Fonts       | Google Fonts — Aref Ruqaa, Reem Kufi, Cairo        |
+| Email       | EmailJS browser SDK v4                             |
+| Ordering    | WhatsApp `wa.me` deep links                        |
+| Persistence | Browser `localStorage`                             |
+| Hosting     | Any static host (Vercel, Netlify, GitHub Pages)    |
 
 ---
-
-## 📦 Modules
-
-### 🌍 Public Pages
-
-| Section | Features |
-|---|---|
-| **Hero** | 3-slide auto-advancing carousel, SVG corner frames, CTA buttons |
-| **Stats Strip** | Animated Arabic numeral counters on scroll |
-| **About** | Layered art photo, offset golden frame, year badge |
-| **Specialties** | 3 icon cards — woodfire, spices, hospitality |
-| **Menu** | Category tabs, dish cards with WhatsApp order, live from localStorage |
-| **Ingredients** | Full-bleed art section — saffron, sumac, za'atar |
-| **Team** | Chef cards with hover-reveal info overlay |
-| **Reviews** | Auto-advancing testimonial carousel |
-| **Contact** | EmailJS form + WhatsApp button + address/hours |
-| **Footer** | Logo, nav links, admin link (hidden) |
-
-### 🔐 Admin Panel (`admin.html`)
-
-| Module | Features |
-|---|---|
-| **Login** | Password screen with error feedback and Enter key support |
-| **Stats** | Live count cards — total, starters, mains, sweets |
-| **Add Dish** | Name, price, category, description, image URL |
-| **Dish Grid** | Search, category filter, paginated dish cards |
-| **Edit Modal** | Pre-filled form, save with validation |
-| **Delete** | Confirm dialog, instant UI update |
-| **Toast System** | Success and error notifications |
-
----
-
-## 🗂️ Project Structure
-
-```
-mazaq/
-├── index.html          # Public restaurant website
-├── admin.html          # Admin dashboard
-├── style.css           # Full design system for public site
-├── script.js           # Public site JS (menu, EmailJS, animations)
-└── images/
-    ├── main.avif
-    ├── main-2.avif
-    ├── main-4.avif
-    ├── من نحن.avif
-    ├── مشاوي مذاق.avif
-    ├── مندي البيت.avif
-    ├── دجاج مذاق بالفرن.avif
-    ├── مائدة الكرم.avif
-    ├── حمّص بيتنا.avif
-    ├── مقبلات المذاق.jpg
-    ├── خبز الطابون.jpg
-    ├── مذاق الحلو.avif
-    ├── sweet-2.jpg
-    ├── chief-1.avif
-    ├── chief-2.avif
-    └── chief-3.jpg
-```
-
----
-
-## ⚙️ Setup & Configuration
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/yourusername/mazaq.git
-cd mazaq
-```
-
-### 2. Configure EmailJS
-
-Open `script.js` and replace the placeholder keys with your [EmailJS](https://emailjs.com) credentials:
-
-```js
-var EMAILJS_PUBLIC_KEY   = "your_public_key";
-var EMAILJS_SERVICE_ID   = "your_service_id";
-var EMAILJS_TEMPLATE_ID  = "your_template_id";   // Email to restaurant owner
-var EMAILJS_AUTOREPLY_ID = "your_autoreply_id";  // Auto-reply to customer (optional)
-```
-
-### 3. Configure WhatsApp number
-
-In `script.js`, update the WhatsApp number (international format, no `+`):
-
-```js
-var WA_NUMBER = "201001234567"; // Replace with your number
-```
-
-Also update the `href` links in `index.html` for the FAB and contact section buttons.
-
-### 4. Change the admin password
-
-In `admin.html`, find and update:
-
-
-
-
 
 ## 📄 License
 
 This project is licensed under the MIT License.
-
----
 
 <div align="center">
 
